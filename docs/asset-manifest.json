@@ -105,7 +105,7 @@
       "path": "docs/INVENTORY.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "f5b736fc6384b7cdcb18760e6f2dea341efe62d04bf3a7c0fc86c9998e9c1557",
+      "sha256": "b2fdd816811ca55addeee7689557351327c6653bb973b70c2514cbf5a4d81c4c",
       "disposition": "RELEASE"
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "path": "docs/SOURCE_MAP.md",
-      "sha256": "9ccf8ab6df4600124a69fb05afc3deb48ca9bb3b03a4567a999fb47c4b24fbe4",
+      "sha256": "c7071169d57057614877ba28ba7c49cd60b73b0ae606edacbf8e4e2da204d2e6",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -250,7 +250,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "65aa25f6f516b9bf8c5022cdff0a1df3c2b85ee2822ac01d384d21d5db4721c4",
+      "sha256": "2ea47c80f5c0d982ada3c4a878e30fed48da05f967e58acc4be0a3b351bf40b4",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -288,7 +288,7 @@
       "origin": "NEW_PUBLIC",
       "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
       "disposition": "RELEASE",
-      "sha256": "35ba18413d35a3aa9f0b81bcc928a5d8879430139e7935850d7fdd8ac18f4e4e"
+      "sha256": "63885dcd2bb3c0a47a5bccbb68b60e5660926929a16c99aec8625da932fab16a"
     },
     {
       "path": "tools/first_use_probe.py",
@@ -330,6 +330,13 @@
       "sha256": "6f2c4c9dc24551fa09b715bac553e4523dc870fdec737c5548633fc7e523769d",
       "origin": "Standard MIT text: https://choosealicense.com/licenses/mit/",
       "transformation": "Only year and fullname placeholders filled: 2026 miaoyuandege; user decision 2026-09-04; no custom terms",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/LAUNCH_COPY.md",
+      "sha256": "c47d0bf91ca20fa0502e88bcfb61c402b5781c9aa5eb45d53c5b0592041b3702",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Three draft lengths from public product positioning; no private data; prepared only, not posted",
       "disposition": "RELEASE"
     }
   ]

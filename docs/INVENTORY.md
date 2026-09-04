@@ -1,6 +1,6 @@
 # Public pretest file disposition
 
-48 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
+49 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
 
 | File | Disposition | Purpose |
 | --- | --- | --- |
@@ -24,6 +24,7 @@
 | docs/GITHUB_SECURITY_PLAN.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/INVENTORY.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/LICENSE_DECISION.md | RELEASE | Reviewed public source, documentation or verification |
+| docs/LAUNCH_COPY.md | RELEASE | Three public-only copy drafts; no external posting |
 | docs/OWNERSHIP.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/PLATFORM.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/PUBLIC_PRIVATE_BOUNDARY.md | RELEASE | Reviewed public source, documentation or verification |

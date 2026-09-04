@@ -1,5 +1,7 @@
 # Explicit source map
 
+Discoverability delta: docs/LAUNCH_COPY.md is NEW_PUBLIC, authored from public product positioning only; no private history or evidence is copied. README adds a short problem statement and illustrative before/after flow, not new product behavior. Social-preview production files are kept outside the Git tree for a separate settings upload.
+
 MIT activation delta: [LICENSE](../LICENSE) uses the [standard MIT text](https://choosealicense.com/licenses/mit/) with only the year/fullname placeholders filled as 2026 miaoyuandege by user decision. License state, inventory, manifest and directly affected verification are synchronized; protocol, Skill and onboarding behavior are unchanged.
 
 Public-pretest delta: START_HERE.md, EXTERNAL_FIRST_USE_FEEDBACK.md, the synthetic external-first-use project and tests/test_public_pretest.py are NEW_PUBLIC; no private Task or filled Report is copied. README/docs now distinguish authorized public testing from final v0.1 licensing/readiness. The preflight adds exact-index scanning for the authorized Git workflow; tracked bytes must match the reviewed working tree and manifest. No private parent repository or real task source is imported.

@@ -2,6 +2,10 @@
 
 **PUBLIC PRE-RELEASE TEST · MIT LICENSED · NOT v0.1 FINAL · EXTERNAL FIRST-USE TESTING**
 
+MindOS is a **Codex-first local workflow for long-running AI projects**.
+
+New chats lose context. Decisions get buried, and "done" can mean anything from a draft to a verified change. MindOS gives your AI a lightweight way to resume work, stay within scope, check results, and leave a clear handoff.
+
 ## Install with AI / 让 AI 帮你安装
 
 Give this repository URL to your AI and say:
@@ -12,13 +16,19 @@ Give this repository URL to your AI and say:
 
 **AI: read [START_HERE.md](START_HERE.md) first.** It guides environment checks, a safe project-local Skill/protocol installation, actual verification and the next user action. Users do not need to learn Skill paths or workflow terminology first.
 
-MindOS is a Codex-first local workflow and governance layer for long-running AI projects.
-
-It helps an AI recover project context, carry out scoped work, preserve evidence, and distinguish implementation from verification and acceptance. It is not an autonomous operating system, a background worker, a hosted service, or a promise about any model's capabilities.
+It is not an autonomous operating system, background worker, hosted service, or a promise about any model's capabilities.
 
 This is an MIT-licensed public pre-release, not a final v0.1 release, stable product or production-readiness claim. External Human First-use = NOT RUN. Local Skill discovery is verified, not end-to-end onboarding.
 
 Licensed under the MIT License. See [LICENSE](LICENSE).
+
+## A 30-second example
+
+Before: new chat → re-explain the project → lose decisions → repeat checks.
+
+With MindOS: “接管这个项目” → AI reads trusted project context → scoped task → verification → one report and handoff.
+
+This illustrates the workflow, not a measured speed or success guarantee.
 
 ## Start small
 
