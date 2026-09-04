@@ -1,0 +1,18 @@
+# Defense in depth only; preflight scans ignored files too.
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.sqlite*
+*.db
+*.jsonl
+*.log
+.codex/
+sessions/
+archived_sessions/
+logs/
+evidence/
+private/
+observations.json
+observations.md

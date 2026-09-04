@@ -1,0 +1,329 @@
+{
+  "schema": "mindos-public-assets@1",
+  "status": "PUBLIC PRE-RELEASE TEST; NOT v0.1 FINAL; LICENSE PENDING; EXTERNAL FIRST-USE TESTING",
+  "self_excluded": "docs/asset-manifest.json",
+  "assets": [
+    {
+      "path": ".gitignore",
+      "sha256": "6a1e610842b66f73f5fdbac36ce9ce3c4615214fa493fd17125d77cb3352b2f7",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "chatgpt/custom-instructions/generic.md",
+      "sha256": "62ab565bac79e2b00b0b26c60bc1b5637dd63fbf5fe76a450b3b9956a094c777",
+      "origin": "GLOBAL/用户画像/Custom Instructions/Custom Instructions v5 Account.md",
+      "transformation": "Thin generic account router; no private path; full protocol remains external; actual save separate.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "codex/profiles/guardrails.md",
+      "sha256": "f9be4c8ed74e1f4a08239e2f8a57fb165e332fb5dcaa9752046277ff96457de6",
+      "origin": "GLOBAL/开发模式.md",
+      "transformation": "Stable native discipline only, no private observations or capability ranking.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "codex/skill/SKILL.md",
+      "sha256": "93a6c2b494f17cbeec27435b6a0d9cfe8b26cc4f6c2656f3f996fd9f363b4226",
+      "origin": "PROJECT/核心区/MindOS_v4.1/执行AI-Skill/SKILL.md",
+      "transformation": "Generic project-relative execution subset; preserve authority, evidence and lifecycle boundaries.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "dc8ef18704ac5f2ec1722bb7c7a528bafab239f7c9449c7136ffdcf21d5f4ddd",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/MindOS.md",
+      "sha256": "2ae435235f58ef3cc64191d383e8c34cd682969014cde332e7f3b90ff8ad9710",
+      "origin": "GLOBAL/MindOS.md",
+      "transformation": "Curated generic protocol; no private paths, project names, evidence or runtime configuration.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/execution-observations.md",
+      "sha256": "e61bd6d4d5ab3eff7f648a1a03c7fd4b0cd9fad63209a4b10ffa2d96a8415645",
+      "origin": "GLOBAL/模板/执行体系观察模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/execution-stage-distillation.md",
+      "sha256": "bca7c174c4159fcb088c66020edda83493a88f26c706995606fbbd79b8b0888e",
+      "origin": "GLOBAL/模板/执行AI项目推进蒸馏模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/main-stage-distillation.md",
+      "sha256": "6983df86e2ef4f53a6ed301084d0d0db75b3abacffc43ef0bc90192bd1b53d1a",
+      "origin": "GLOBAL/模板/主理AI阶段蒸馏模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/profile-candidates.md",
+      "sha256": "5fb7ae5dde7f8a72daac4b089693cfe53f4fa1e6e252a204ef6ed1fe699ef06d",
+      "origin": "GLOBAL/模板/用户画像候选模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/report.md",
+      "sha256": "e8aa711b827e820808f33d4ea1d05f4e5cf45c3237d7682594ee0eea4e836dee",
+      "origin": "GLOBAL/模板/报告单模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "core/templates/task.md",
+      "sha256": "b0ddfb64595d9b26183e99acca0f243b22dd9e0d62ffdbc5c360d0434553cdc9",
+      "origin": "GLOBAL/模板/任务单模板.md",
+      "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/EXTERNAL_FIRST_USE_FEEDBACK.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "8ad43f12179271921c9df403f995a28af48467e2b9600520f82b445a802dfcbf"
+    },
+    {
+      "path": "docs/GITHUB_SECURITY_PLAN.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "182239c359482829fbb212dae934f65f39fec86bc2e27b6599813c8e44c8aba0",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/INVENTORY.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "2282df7d8ffb8b93fdac114892400838a026046161f6d7779fecda2cb5eedaa6",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/LICENSE_DECISION.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "13e3ee968fa0fc1e9b1e89380b256711dc6f7d9cac631f36ccb6876619928e5b",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/OWNERSHIP.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "df0d69bcb291d99a9ea33e4473b462c4b1e89042460d65f4be4da2ddfffd1173",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/PLATFORM.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "bb2fc45d2ae1fafe919a23d15be71ce9681d9a8b01f76891e27cbca279e482af",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/PUBLIC_PRIVATE_BOUNDARY.md",
+      "sha256": "36632f4c39cf06d1c052c7057a564cd63aec3f84f0f3991a627b716ea59eda02",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/QUICK_START.md",
+      "sha256": "e1382cafd9b9d9d469b61dbfd3eaa0906d340ae1a9f2e08718835b63b4926e39",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/RELEASE_READINESS.md",
+      "sha256": "b9a1b173b5be74668aa03723ead54a3c9ae195f6d68779a80abb9b3cc33cde69",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/SOURCE_MAP.md",
+      "sha256": "01409eb1525cef3be82b45370119f80ad20866072da8f9369bc90999181b052d",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/VERIFY.md",
+      "sha256": "dca8b1d063af6f2f5272f09a6a4602db8957bc098421a682ae064c1b23d9de6e",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "examples/external-first-use-project/当前有效/README.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "bb9aed44b31c44c8e8a4fb8998ffb5737ab8c58737339177ea0283a969141e8e"
+    },
+    {
+      "path": "examples/external-first-use-project/规划与未决/README.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "bb93628ded9d9fc2873db732571eb3d57193868aacc6266767f3a91f2343ec6a"
+    },
+    {
+      "path": "examples/external-first-use-project/欢迎说明.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "8e9e41739daaed2de7a64c65ed40474e467e2bebe922c286b537f43e13df3ed7"
+    },
+    {
+      "path": "examples/external-first-use-project/任务交接记录/README.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "0efdc471e8bb9710740fe98a34f4e0523ca736a61e132ea5d0ae7015de43744a"
+    },
+    {
+      "path": "examples/external-first-use-project/收件箱/EXT-FIRST-001_任务单.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "b0251391cc43954654a02388612e79c96cb981ab99e33a53754c44312a11a4b1"
+    },
+    {
+      "path": "examples/external-first-use-project/项目当前阶段.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "ea471944bb875a42ae665ae59b2c2dddd9058292e0b735e7b06d681a84f85031"
+    },
+    {
+      "path": "examples/external-first-use-project/项目总览.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "668b4e066f73afe4b54e6b824eae57b077648193e2698c400410253131b8d006"
+    },
+    {
+      "path": "examples/first-task.md",
+      "sha256": "9cee1a2478c7141795782d35903ac333133faf5b3cb235b06f0288adf76f3d53",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "presets/codex-workflow/README.md",
+      "sha256": "cb1cd591aa7e429d188ceb93bc3921a297db259206d8ba737614f7ef7f7ac586",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "presets/full/README.md",
+      "sha256": "ce311b111522f763d5123ae3bd0dcfd03048d725c85c4230143b881ad62a99ca",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "presets/minimal/README.md",
+      "sha256": "016fe5584061a5c0cd5f3cfc18d42074d5738af2649efcf033364e536459e61b",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "presets/observability/README.md",
+      "sha256": "4d8d97822c1298ab48dd96b3904714dae8db9d442a160199ea3ac9bf05346623",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "033b72c3ce4760348a1044cc06344beee746227289914c993ad6db4c695f6253",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "SECURITY.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "f2375dca59750a35e7c3f4ca0bd28ace3d2a383fe048374cc292cb38efceb6c4",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "START_HERE.md",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "4b3816eaf70e0595737b669e6f7d166ad6be6c1afc84fed29455d3d70769a7cf"
+    },
+    {
+      "path": "tests/test_candidate.py",
+      "sha256": "d32a285cef5edda035bae605d7a22dc0044df59fe5d4c5f2185f3ac2f552c127",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tests/test_first_use.py",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "db550002ec132540d4e9306fa0761d8e3a01f1cf9a9bc4cbe947346cd888826a",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tests/test_public_pretest.py",
+      "origin": "NEW_PUBLIC",
+      "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
+      "disposition": "RELEASE",
+      "sha256": "502c87023fd0bdc66e4c7ca22f55eb81ca16f808b714d8eabc8da0d457031ebd"
+    },
+    {
+      "path": "tools/first_use_probe.py",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
+      "sha256": "f989c06dcc5fb6b6c9d82eea6623265020821e2bc259f811cbcf07aef47f7f27",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tools/history-distiller/distill.py",
+      "sha256": "72fb8a5cdd5e5b241e1618b7e245651ac9ac3e56ad9acb66424b9e2b6df98681",
+      "origin": "PROGRAMS/tools/codex-history-distiller/distill.py",
+      "transformation": "Require explicit date bounds; parser logic retained.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tools/history-distiller/README.md",
+      "sha256": "fd3d04dd3babab56d3ce531c5ff55935009ab6ea350ac0a347489ac3726833a1",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tools/history-distiller/test_distill.py",
+      "sha256": "cd28a5bf5aecd9fff27a8bf1ae095c3d77c4e34ab0bcef4e3fedc089d69be55c",
+      "origin": "PROGRAMS/tools/codex-history-distiller/test_distill.py",
+      "transformation": "Synthetic projects/models; omit internal-only evidence verifier test.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "tools/prepublish_scan.py",
+      "sha256": "6d1ebbc31ea51146f53800f820538e5c5bc040429350c6df2f0ddd769ddf7b0f",
+      "origin": "NEW_PUBLIC",
+      "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    }
+  ]
+}
