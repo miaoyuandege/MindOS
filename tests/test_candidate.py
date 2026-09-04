@@ -65,6 +65,16 @@ class CandidateTests(unittest.TestCase):
         (root/'extra.md').write_text('unknown origin',encoding='utf-8')
         self.assertTrue(any(x['rule']=='unmapped_or_missing_assets' for x in scanner.scan(root)['findings']))
 
+    def test_root_license_is_scanned_not_exempted(self):
+        self.assertTrue(scanner.scan(self.fixture('MIT License', 'LICENSE'), False)['passed'])
+        value = 'sk-' + 'syntheticvalueonly' * 2
+        self.assertFalse(scanner.scan(self.fixture(value, 'LICENSE'), False)['passed'])
+        self.assertFalse(scanner.scan(self.fixture('unknown', 'LICENSE-other'), False)['passed'])
+        root = self.fixture('safe')
+        (root/'nested').mkdir()
+        (root/'nested/LICENSE').write_text('not allowlisted', encoding='utf-8')
+        self.assertFalse(scanner.scan(root, False)['passed'])
+
     def test_candidate_links_exist(self):
         for path in ROOT.rglob('*.md'):
             for raw in re.findall(r'\]\(([^)]+)\)',path.read_text(encoding='utf-8-sig')):
@@ -72,8 +82,11 @@ class CandidateTests(unittest.TestCase):
                 if not target or '://' in target: continue
                 self.assertTrue((path.parent/target).exists(),f'{path.relative_to(ROOT)}: {target}')
 
-    def test_candidate_has_no_license_decision(self):
-        self.assertFalse((ROOT/'LICENSE').exists())
+    def test_candidate_has_mit_license(self):
+        self.assertEqual(hashlib.sha256((ROOT/'LICENSE').read_bytes()).hexdigest(), '6f2c4c9dc24551fa09b715bac553e4523dc870fdec737c5548633fc7e523769d')
+        license_text = (ROOT/'LICENSE').read_text(encoding='utf-8')
+        self.assertIn('Copyright (c) 2026 miaoyuandege', license_text)
+        self.assertTrue(license_text.startswith('MIT License\n'))
         self.assertEqual(len(list((ROOT/'core/templates').glob('*.md'))),6)
 
 

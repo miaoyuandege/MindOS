@@ -1,6 +1,6 @@
 # MindOS
 
-**PUBLIC PRE-RELEASE TEST · NOT v0.1 FINAL · LICENSE PENDING · EXTERNAL FIRST-USE TESTING**
+**PUBLIC PRE-RELEASE TEST · MIT LICENSED · NOT v0.1 FINAL · EXTERNAL FIRST-USE TESTING**
 
 ## Install with AI / 让 AI 帮你安装
 
@@ -16,7 +16,9 @@ MindOS is a Codex-first local workflow and governance layer for long-running AI 
 
 It helps an AI recover project context, carry out scoped work, preserve evidence, and distinguish implementation from verification and acceptance. It is not an autonomous operating system, a background worker, a hosted service, or a promise about any model's capabilities.
 
-This is public pre-release test source, not a licensed final open-source release, stable product or production-readiness claim. License/owner attribution and clean authenticated external first-use remain pending. Local Skill discovery is verified, not end-to-end onboarding.
+This is an MIT-licensed public pre-release, not a final v0.1 release, stable product or production-readiness claim. External Human First-use = NOT RUN. Local Skill discovery is verified, not end-to-end onboarding.
+
+Licensed under the MIT License. See [LICENSE](LICENSE).
 
 ## Start small
 
@@ -44,4 +46,4 @@ Aim: understand the workflow in about ten minutes and try one small useful chang
 
 [Public/private boundary](docs/PUBLIC_PRIVATE_BOUNDARY.md) → [source map](docs/SOURCE_MAP.md) → [local verification](docs/VERIFY.md) → [release-readiness blockers](docs/RELEASE_READINESS.md).
 
-The public pretest is specifically for independent first-use feedback. No v0.1 tag, GitHub Release, package-registry release, final license or synchronization daemon is included. Do not turn a successful download into a claim of external human acceptance.
+The public pretest is specifically for independent first-use feedback. No v0.1 tag, GitHub Release, package-registry release or synchronization daemon is included. Do not turn a successful download into a claim of external human acceptance.

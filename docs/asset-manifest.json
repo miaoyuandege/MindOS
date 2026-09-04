@@ -1,6 +1,6 @@
 {
   "schema": "mindos-public-assets@1",
-  "status": "PUBLIC PRE-RELEASE TEST; NOT v0.1 FINAL; LICENSE PENDING; EXTERNAL FIRST-USE TESTING",
+  "status": "PUBLIC PRE-RELEASE TEST; MIT LICENSED; NOT v0.1 FINAL; EXTERNAL FIRST-USE TESTING",
   "self_excluded": "docs/asset-manifest.json",
   "assets": [
     {
@@ -98,28 +98,28 @@
       "path": "docs/GITHUB_SECURITY_PLAN.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "182239c359482829fbb212dae934f65f39fec86bc2e27b6599813c8e44c8aba0",
+      "sha256": "098c47e293a06f272c5b90572bf0fc7a5399f401f83c5f065e13b226c75e27a0",
       "disposition": "RELEASE"
     },
     {
       "path": "docs/INVENTORY.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "2282df7d8ffb8b93fdac114892400838a026046161f6d7779fecda2cb5eedaa6",
+      "sha256": "f5b736fc6384b7cdcb18760e6f2dea341efe62d04bf3a7c0fc86c9998e9c1557",
       "disposition": "RELEASE"
     },
     {
       "path": "docs/LICENSE_DECISION.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "13e3ee968fa0fc1e9b1e89380b256711dc6f7d9cac631f36ccb6876619928e5b",
+      "sha256": "850da6b9f030bd176bd6bd4439061f27d90ce406cf3bf563ea15cff6021a0e6c",
       "disposition": "RELEASE"
     },
     {
       "path": "docs/OWNERSHIP.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "df0d69bcb291d99a9ea33e4473b462c4b1e89042460d65f4be4da2ddfffd1173",
+      "sha256": "0d29b7a01f3ae2d232ee2e0cedcf1b5f6f2ecfc4c428923a4995224d030d2a27",
       "disposition": "RELEASE"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "path": "docs/PUBLIC_PRIVATE_BOUNDARY.md",
-      "sha256": "36632f4c39cf06d1c052c7057a564cd63aec3f84f0f3991a627b716ea59eda02",
+      "sha256": "bb13a8f970123aaf2b4a952a1025ad97103cb4de09ee865992731bb5f58a9f52",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -145,14 +145,14 @@
     },
     {
       "path": "docs/RELEASE_READINESS.md",
-      "sha256": "b9a1b173b5be74668aa03723ead54a3c9ae195f6d68779a80abb9b3cc33cde69",
+      "sha256": "2bd5869016a29b3f0943e7fda7eaade2e5a388876ec2a96c95731e155e6338e4",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
     },
     {
       "path": "docs/SOURCE_MAP.md",
-      "sha256": "01409eb1525cef3be82b45370119f80ad20866072da8f9369bc90999181b052d",
+      "sha256": "9ccf8ab6df4600124a69fb05afc3deb48ca9bb3b03a4567a999fb47c4b24fbe4",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -250,7 +250,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "033b72c3ce4760348a1044cc06344beee746227289914c993ad6db4c695f6253",
+      "sha256": "65aa25f6f516b9bf8c5022cdff0a1df3c2b85ee2822ac01d384d21d5db4721c4",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -267,11 +267,11 @@
       "origin": "NEW_PUBLIC",
       "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
       "disposition": "RELEASE",
-      "sha256": "4b3816eaf70e0595737b669e6f7d166ad6be6c1afc84fed29455d3d70769a7cf"
+      "sha256": "8fa0d74bbe8f62f8e6aa84b7e261f0a9e883ba1567921857ffe96e33e70c625c"
     },
     {
       "path": "tests/test_candidate.py",
-      "sha256": "d32a285cef5edda035bae605d7a22dc0044df59fe5d4c5f2185f3ac2f552c127",
+      "sha256": "77c329f2d4aae1f107d973e8c36280b8e9359a6440175c4fabc241ce02f24757",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -288,7 +288,7 @@
       "origin": "NEW_PUBLIC",
       "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
       "disposition": "RELEASE",
-      "sha256": "502c87023fd0bdc66e4c7ca22f55eb81ca16f808b714d8eabc8da0d457031ebd"
+      "sha256": "35ba18413d35a3aa9f0b81bcc928a5d8879430139e7935850d7fdd8ac18f4e4e"
     },
     {
       "path": "tools/first_use_probe.py",
@@ -320,9 +320,16 @@
     },
     {
       "path": "tools/prepublish_scan.py",
-      "sha256": "6d1ebbc31ea51146f53800f820538e5c5bc040429350c6df2f0ddd769ddf7b0f",
+      "sha256": "e7eeb2cbef77fb17c1e4bbbae00ed0afdcb269d816459dd2e9b83d10ed906e5f",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6f2c4c9dc24551fa09b715bac553e4523dc870fdec737c5548633fc7e523769d",
+      "origin": "Standard MIT text: https://choosealicense.com/licenses/mit/",
+      "transformation": "Only year and fullname placeholders filled: 2026 miaoyuandege; user decision 2026-09-04; no custom terms",
       "disposition": "RELEASE"
     }
   ]

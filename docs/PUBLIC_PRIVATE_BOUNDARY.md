@@ -1,6 +1,6 @@
 # Public / private boundary
 
-PUBLIC CANDIDATE: generic protocol, unfilled templates, generic execution Skill and workflow instructions, conservative Agent guardrails, the inspected history parser source and synthetic tests, and newly authored docs/preflight. Public candidate does not mean released or licensed.
+PUBLIC CANDIDATE: generic protocol, unfilled templates, generic execution Skill and workflow instructions, conservative Agent guardrails, the inspected history parser source and synthetic tests, and newly authored docs/preflight. This public pre-release is MIT-licensed under [LICENSE](../LICENSE), but is not a final v0.1 release.
 
 NEVER COPIED BY DEFAULT: user profiles and personal records; real project Current/Planning/History; completed Task/Report/Evidence; raw Codex sessions; Runtime DB/task records; server addresses/accounts/SSH configuration; bot credentials or identities; API keys/tokens/cookies; account-specific configuration; private game/audio/business assets; private AI observations; downloads, screenshots and logs.
 

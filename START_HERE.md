@@ -1,6 +1,6 @@
 # Start here — AI-guided installation
 
-**PUBLIC PRE-RELEASE TEST · NOT v0.1 FINAL · LICENSE PENDING · EXTERNAL FIRST-USE TESTING**
+**PUBLIC PRE-RELEASE TEST · MIT LICENSED · NOT v0.1 FINAL · EXTERNAL FIRST-USE TESTING**
 
 For the user: give this repository URL to your AI and say:
 

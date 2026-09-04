@@ -1,6 +1,6 @@
 # GitHub-side plan — not executed
 
-The public pretest has separate upload authorization; final v0.1 still requires license and external first-use evidence. Verify actual settings during that pretest task and record their current state in its report. The checklist itself is not proof that any feature is enabled.
+The public pretest has separate upload authorization; MIT is now selected; final v0.1 still requires external first-use evidence and final freeze. Verify actual settings during that pretest task and record their current state in its report. The checklist itself is not proof that any feature is enabled.
 
 2026-09-04 repository API check: secret scanning ENABLED; repository push protection ENABLED; private vulnerability reporting ENABLED. No claim is made about tested notification delivery, branch rules, required CI or Dependabot updates. Private reporting policy is in SECURITY.md. These controls supplement the exact local pre-push scan, not replace it.
 

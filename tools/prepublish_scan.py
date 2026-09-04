@@ -49,7 +49,7 @@ def scan(root, require_manifest=True):
             continue
         if path.stat().st_size > 4 * 1024 * 1024:
             add(rel, 'suspicious', 'oversized_unreviewed_file'); continue
-        if path.suffix.lower() not in TEXT_SUFFIXES and path.name != '.gitignore':
+        if path.suffix.lower() not in TEXT_SUFFIXES and rel not in {'.gitignore', 'LICENSE'}:
             add(rel, 'suspicious', 'unknown_file_type'); continue
         try:
             text = path.read_text(encoding='utf-8-sig')

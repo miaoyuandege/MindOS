@@ -1,11 +1,12 @@
 # Public pretest file disposition
 
-47 exact candidate files; PUBLIC PRE-RELEASE TEST, NOT v0.1 FINAL, LICENSE PENDING, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a license grant or final release. No private source, completed real report or account data is included.
+48 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
 
 | File | Disposition | Purpose |
 | --- | --- | --- |
 | .gitignore | RELEASE | Reviewed public source, documentation or verification |
 | CONTRIBUTING.md | RELEASE | Reviewed public source, documentation or verification |
+| LICENSE | RELEASE | Standard MIT License; Copyright (c) 2026 miaoyuandege |
 | README.md | RELEASE | Reviewed public source, documentation or verification |
 | SECURITY.md | RELEASE | Reviewed public source, documentation or verification |
 | START_HERE.md | RELEASE | Reviewed public source, documentation or verification |
@@ -52,4 +53,4 @@
 | tools/history-distiller/test_distill.py | RELEASE | Reviewed public source, documentation or verification |
 | tools/prepublish_scan.py | RELEASE | Reviewed public source, documentation or verification |
 
-DEFER: Runtime, Router, bot, File Bridge, Observers, launcher, daemon, plugin/store installer and private-history evidence. REMOVE_FROM_CANDIDATE: NONE. No LICENSE, formal tag or GitHub Release asset. Root .git metadata is not part of the tracked/public manifest. The provenance manifest excludes only its own content hash; tracked preflight compares exact staged bytes with the working tree and rejects extra files outside root Git metadata.
+DEFER: Runtime, Router, bot, File Bridge, Observers, launcher, daemon, plugin/store installer and private-history evidence. REMOVE_FROM_CANDIDATE: NONE. MIT LICENSE included; no formal tag or GitHub Release asset. Root .git metadata is not part of the tracked/public manifest. The provenance manifest excludes only its own content hash; tracked preflight compares exact staged bytes with the working tree and rejects extra files outside root Git metadata.

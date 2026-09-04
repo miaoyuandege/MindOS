@@ -46,8 +46,14 @@ class PublicPretestTests(unittest.TestCase):
 
     def test_ai_entry_and_unexecuted_synthetic_project(self):
         entry = (ROOT/'START_HERE.md').read_text(encoding='utf-8')
-        for key in ['A. Inspect','B. Install','C. Place','D. Verify','E. Tell','接管这个项目','执行任务','LICENSE PENDING']:
+        for key in ['A. Inspect','B. Install','C. Place','D. Verify','E. Tell','接管这个项目','执行任务','MIT LICENSED']:
             self.assertIn(key, entry)
+        self.assertNotIn('LICENSE PENDING', entry)
+        readme = (ROOT/'README.md').read_text(encoding='utf-8')
+        self.assertIn('[LICENSE](LICENSE)', readme)
+        self.assertIn('NOT v0.1 FINAL', readme)
+        self.assertIn('External Human First-use = NOT RUN', readme)
+        self.assertNotIn('LICENSE PENDING', readme)
         project = ROOT/'examples/external-first-use-project'
         self.assertEqual((project/'欢迎说明.md').read_text(encoding='utf-8').count('等待补充。'),1)
         self.assertTrue((project/'收件箱/EXT-FIRST-001_任务单.md').is_file())
