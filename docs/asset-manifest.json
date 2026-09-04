@@ -211,7 +211,7 @@
       "origin": "NEW_PUBLIC",
       "transformation": "AI-guided public pretest entry, synthetic project or focused tests; no private source copied.",
       "disposition": "RELEASE",
-      "sha256": "668b4e066f73afe4b54e6b824eae57b077648193e2698c400410253131b8d006"
+      "sha256": "fc3f5d6543e437b9bcf588e63b91d902edd4f1b8de41325d2a8889c74e8336ea"
     },
     {
       "path": "examples/first-task.md",
