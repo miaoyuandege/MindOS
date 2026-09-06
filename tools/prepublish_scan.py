@@ -6,6 +6,7 @@ import ipaddress
 import json
 from pathlib import Path
 import re
+import struct
 import subprocess
 import tempfile
 
@@ -19,10 +20,11 @@ URL = re.compile(r'''https?://([^/\s)'"<>]+)''', re.I)
 KEYWORDS = re.compile(r'(?i)\b(?:secret|token|cookie|authorization|bearer|api[_-]?key|openid|session_meta)\b')
 FORBIDDEN_DIRS = {'.git', '.codex', 'sessions', 'archived_sessions', 'private', 'logs', 'evidence', '__pycache__', '.venv'}
 FORBIDDEN_SUFFIXES = {'.db', '.sqlite', '.sqlite3', '.jsonl', '.log', '.pyc', '.pem', '.key', '.png', '.jpg', '.zip'}
+PUBLIC_BINARY_ASSETS = {'assets/social-preview.png'}
 GENERATED = {'observations.json', 'observations.md', 'readiness.json'}
-TEXT_SUFFIXES = {'.md', '.py', '.json', '.txt', '.yaml', '.yml', '.toml'}
+TEXT_SUFFIXES = {'.md', '.py', '.json', '.txt', '.yaml', '.yml', '.toml', '.svg'}
 MANIFEST = 'docs/asset-manifest.json'
-PUBLIC_REFERENCE_HOSTS = {'learn.chatgpt.com', 'developers.openai.com', 'docs.github.com', 'choosealicense.com', 'www.apache.org'}
+PUBLIC_REFERENCE_HOSTS = {'learn.chatgpt.com', 'developers.openai.com', 'docs.github.com', 'choosealicense.com', 'www.apache.org', 'www.w3.org'}
 
 
 def scan(root, require_manifest=True):
@@ -43,12 +45,25 @@ def scan(root, require_manifest=True):
         if not path.is_file():
             add(rel, 'suspicious', 'non_regular_file'); continue
         files[rel] = path
-        if path.name.startswith('.env') or path.suffix.lower() in FORBIDDEN_SUFFIXES or path.name in GENERATED:
+        if (path.name.startswith('.env') or path.suffix.lower() in FORBIDDEN_SUFFIXES or path.name in GENERATED) and rel not in PUBLIC_BINARY_ASSETS:
             add(rel, 'confirmed secret/private', 'private_or_generated_file'); continue
         if any(part in FORBIDDEN_DIRS for part in path.relative_to(root).parts):
             continue
         if path.stat().st_size > 4 * 1024 * 1024:
             add(rel, 'suspicious', 'oversized_unreviewed_file'); continue
+        if rel in PUBLIC_BINARY_ASSETS:
+            data = path.read_bytes()
+            valid_png = (
+                len(data) >= 24
+                and data[:8] == b'\x89PNG\r\n\x1a\n'
+                and data[12:16] == b'IHDR'
+                and struct.unpack('>II', data[16:24]) == (1280, 640)
+            )
+            if not valid_png:
+                add(rel, 'suspicious', 'invalid_public_binary')
+            else:
+                add(rel, 'safe', 'allowlisted_original_public_binary')
+            continue
         if path.suffix.lower() not in TEXT_SUFFIXES and rel not in {'.gitignore', 'LICENSE'}:
             add(rel, 'suspicious', 'unknown_file_type'); continue
         try:

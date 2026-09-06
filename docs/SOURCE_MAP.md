@@ -1,6 +1,8 @@
 # Explicit source map
 
-Discoverability delta: docs/LAUNCH_COPY.md is NEW_PUBLIC, authored from public product positioning only; no private history or evidence is copied. README adds a short problem statement and illustrative before/after flow, not new product behavior. Social-preview production files are kept outside the Git tree for a separate settings upload.
+Visual front-door delta: assets/mindos-mark.svg, assets/mindos-hero.svg, assets/mindos-workflow.svg and assets/social-preview.svg are NEW_PUBLIC originals built from simple shapes, system-font fallbacks and the public product positioning. assets/social-preview.png is a deterministic 1280 x 640 render of that editable source. README adds the hero, primary value, direct Install-with-AI action and visual workflow without changing product behavior. No private history, screenshot, Evidence or third-party artwork is copied.
+
+Discoverability delta: docs/LAUNCH_COPY.md is NEW_PUBLIC, authored from public product positioning only; no private history or evidence is copied. README adds a short problem statement and illustrative before/after flow, not new product behavior.
 
 MIT activation delta: [LICENSE](../LICENSE) uses the [standard MIT text](https://choosealicense.com/licenses/mit/) with only the year/fullname placeholders filled as 2026 miaoyuandege by user decision. License state, inventory, manifest and directly affected verification are synchronized; protocol, Skill and onboarding behavior are unchanged.
 
@@ -12,6 +14,8 @@ Root aliases refer to the maintainer's private checkout; their machine-specific 
 
 | Public asset | Internal canonical source / origin | Transformation and sync rule | Verification |
 | --- | --- | --- | --- |
+| assets/mindos-mark.svg, assets/mindos-hero.svg, assets/mindos-workflow.svg, assets/social-preview.svg | New public-only original visual identity | Maintain local vector shapes and system-font fallbacks; no remote resources or private source material | XML parse, fixed dimensions, local-reference test, light/dark/narrow render review |
+| assets/social-preview.png | Deterministic render of assets/social-preview.svg | Regenerate from the reviewed SVG at exactly 1280 x 640; do not substitute an unrelated binary | PNG signature/dimensions, visual review, manifest hash |
 | core/MindOS.md | GLOBAL/MindOS.md | Curated generic protocol, including Lifecycle Delta; strip local paths, personal projects, routing configuration and private Evidence links; do not blindly mirror | Role/authority/lifecycle walkthrough, link/privacy scan |
 | core/templates/*.md | GLOBAL/模板; exact per-file mapping in asset-manifest.json | Only six inspected generic Task/Report/four Stage Source templates; no filled-in documents | Inventory and privacy scan |
 | codex/skill/SKILL.md | PROJECT/核心区/MindOS_v4.1/执行AI-Skill/SKILL.md | Generic project-relative execution subset; no machine-specific Runtime or installed path; retain safety and manual completion | Skill validator + protocol consistency |

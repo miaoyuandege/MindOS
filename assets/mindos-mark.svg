@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">MindOS mark</title>
+  <desc id="desc">A calm loop connecting trusted context, conversation, execution, and verified handoff.</desc>
+  <rect width="128" height="128" rx="28" fill="#F6F7F2"/>
+  <rect x="24" y="26" width="44" height="10" rx="5" fill="#3059D9"/>
+  <rect x="24" y="43" width="32" height="8" rx="4" fill="#AAB7DD"/>
+  <circle cx="89" cy="37" r="13" fill="#DDE5FB" stroke="#3059D9" stroke-width="4"/>
+  <circle cx="37" cy="90" r="13" fill="#E0F4ED" stroke="#148566" stroke-width="4"/>
+  <rect x="70" y="78" width="34" height="25" rx="7" fill="#17202A"/>
+  <line x1="69" y1="32" x2="75" y2="32" stroke="#3059D9" stroke-width="4" stroke-linecap="round"/>
+  <line x1="89" y1="52" x2="89" y2="68" stroke="#3059D9" stroke-width="4" stroke-linecap="round"/>
+  <line x1="68" y1="91" x2="52" y2="91" stroke="#148566" stroke-width="4" stroke-linecap="round"/>
+  <line x1="37" y1="74" x2="37" y2="62" stroke="#148566" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="89" cy="91" r="4" fill="#F6F7F2"/>
+</svg>

@@ -1,8 +1,16 @@
+<p align="center">
+  <img src="assets/mindos-hero.svg" width="100%" alt="MindOS — Move context out of the chat. Keep thinking in the conversation.">
+</p>
+
 # MindOS
+
+**Move context out of the chat. Keep thinking in the conversation.**
+
+MindOS is a **Codex-first local work system for long-running AI projects**. It keeps trusted project context in files, so human and AI can spend the conversation on judgment, ideas, and the work itself—not repeated setup.
 
 **PUBLIC PRE-RELEASE TEST · MIT LICENSED · NOT v0.1 FINAL · EXTERNAL FIRST-USE TESTING**
 
-MindOS is a **Codex-first local workflow for long-running AI projects**.
+[Install with AI](#install-with-ai--让-ai-帮你安装) · [See how it works](#how-it-works) · [Start here](START_HERE.md)
 
 New chats lose context. Decisions get buried, and "done" can mean anything from a draft to a verified change. MindOS gives your AI a lightweight way to resume work, stay within scope, check results, and leave a clear handoff.
 
@@ -21,6 +29,12 @@ It is not an autonomous operating system, background worker, hosted service, or 
 This is an MIT-licensed public pre-release, not a final v0.1 release, stable product or production-readiness claim. External Human First-use = NOT RUN. Local Skill discovery is verified, not end-to-end onboarding.
 
 Licensed under the MIT License. See [LICENSE](LICENSE).
+
+## How it works
+
+![The MindOS collaboration loop: trusted context, deep collaboration, scoped execution, and verified handoff](assets/mindos-workflow.svg)
+
+AI restores trusted project context → human and AI think together → work becomes a scoped task → execution is verified → the next session starts informed.
 
 ## A 30-second example
 

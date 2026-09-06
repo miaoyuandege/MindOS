@@ -1,6 +1,6 @@
 # Public pretest file disposition
 
-49 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
+54 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
 
 | File | Disposition | Purpose |
 | --- | --- | --- |
@@ -10,6 +10,11 @@
 | README.md | RELEASE | Reviewed public source, documentation or verification |
 | SECURITY.md | RELEASE | Reviewed public source, documentation or verification |
 | START_HERE.md | RELEASE | Reviewed public source, documentation or verification |
+| assets/mindos-hero.svg | RELEASE | Original font-free README hero; fixed light surface for light/dark hosts |
+| assets/mindos-mark.svg | RELEASE | Original compact MindOS mark |
+| assets/mindos-workflow.svg | RELEASE | Original four-step collaboration-loop visual |
+| assets/social-preview.png | RELEASE | Deterministic 1280 x 640 social-preview render |
+| assets/social-preview.svg | RELEASE | Original editable source for the social preview |
 | chatgpt/custom-instructions/generic.md | RELEASE | Reviewed public source, documentation or verification |
 | codex/profiles/guardrails.md | RELEASE | Reviewed public source, documentation or verification |
 | codex/skill/SKILL.md | RELEASE | Reviewed public source, documentation or verification |

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">The MindOS collaboration loop</title>
+  <desc id="desc">Trusted project context supports human and AI thinking, scoped execution, verification, and a handoff ready for the next session.</desc>
+  <rect width="1280" height="360" rx="24" fill="#F6F7F2"/>
+  <text x="56" y="61" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" letter-spacing="1.4" fill="#2448B8">THE COLLABORATION LOOP</text>
+  <line x1="160" y1="176" x2="1120" y2="176" stroke="#C8D0DD" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="160" cy="176" r="24" fill="#3059D9"/>
+  <circle cx="480" cy="176" r="24" fill="#3059D9"/>
+  <circle cx="800" cy="176" r="24" fill="#17202A"/>
+  <circle cx="1120" cy="176" r="24" fill="#148566"/>
+  <text x="152" y="184" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="472" y="184" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="792" y="184" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="1112" y="184" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="93" y="128" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#17202A">Trusted context</text>
+  <text x="84" y="235" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#5F6A77">AI restores project state</text>
+  <text x="381" y="128" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#17202A">Think together</text>
+  <text x="382" y="235" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#5F6A77">Human judgment stays central</text>
+  <text x="718" y="128" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#17202A">Scoped execution</text>
+  <text x="706" y="235" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#5F6A77">Work is bounded and checked</text>
+  <text x="1028" y="128" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#17202A">Verified handoff</text>
+  <text x="1005" y="235" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#5F6A77">Next session starts informed</text>
+  <line x1="1120" y1="282" x2="160" y2="282" stroke="#9BCFBE" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="282" x2="178" y2="270" stroke="#148566" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="282" x2="178" y2="294" stroke="#148566" stroke-width="3" stroke-linecap="round"/>
+  <text x="534" y="318" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="650" fill="#117055">CONTEXT READY FOR WHAT COMES NEXT</text>
+</svg>

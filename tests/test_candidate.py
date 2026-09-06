@@ -3,8 +3,10 @@ import importlib.util
 import json
 from pathlib import Path
 import re
+import struct
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,8 +50,20 @@ class CandidateTests(unittest.TestCase):
 
     def test_reviewed_public_reference_hosts_are_exact(self):
         self.assertTrue(scanner.scan(self.fixture('https://learn.chatgpt.com/docs/build-skills'), False)['passed'])
+        self.assertTrue(scanner.scan(self.fixture('http://www.w3.org/2000/svg', 'asset.svg'), False)['passed'])
         fake_host = 'https' + '://' + 'learn.chatgpt.com' + '.invalid/docs'
         self.assertFalse(scanner.scan(self.fixture(fake_host), False)['passed'])
+
+    def test_only_exact_social_preview_png_is_allowed(self):
+        root = self.fixture('safe')
+        (root/'assets').mkdir()
+        header = b'\x89PNG\r\n\x1a\n' + b'\x00\x00\x00\x0dIHDR' + struct.pack('>II', 1280, 640)
+        (root/'assets/social-preview.png').write_bytes(header)
+        self.assertTrue(scanner.scan(root, False)['passed'])
+        (root/'assets/social-preview.png').write_bytes(header[:16] + struct.pack('>II', 640, 320))
+        self.assertFalse(scanner.scan(root, False)['passed'])
+        (root/'unreviewed.png').write_bytes(header)
+        self.assertFalse(scanner.scan(root, False)['passed'])
 
     def test_loopback_port_is_not_external(self):
         self.assertTrue(scanner.scan(self.fixture('http://127.0.0.1:9'), False)['passed'])
@@ -88,6 +102,24 @@ class CandidateTests(unittest.TestCase):
         self.assertIn('Copyright (c) 2026 miaoyuandege', license_text)
         self.assertTrue(license_text.startswith('MIT License\n'))
         self.assertEqual(len(list((ROOT/'core/templates').glob('*.md'))),6)
+
+    def test_visual_front_door_assets_are_local_and_fixed_size(self):
+        expected = {
+            'mindos-mark.svg': (128, 128),
+            'mindos-hero.svg': (1280, 500),
+            'mindos-workflow.svg': (1280, 360),
+            'social-preview.svg': (1280, 640),
+        }
+        for name, dimensions in expected.items():
+            path = ROOT/'assets'/name
+            svg = ET.parse(path).getroot()
+            self.assertEqual((int(svg.attrib['width']), int(svg.attrib['height'])), dimensions)
+            raw = path.read_text(encoding='utf-8')
+            self.assertNotRegex(raw, r'(?i)(?:href|src)\s*=')
+            self.assertNotIn('@font-face', raw)
+        png = (ROOT/'assets/social-preview.png').read_bytes()
+        self.assertEqual(png[:8], b'\x89PNG\r\n\x1a\n')
+        self.assertEqual(struct.unpack('>II', png[16:24]), (1280, 640))
 
 
 if __name__ == '__main__': unittest.main()
