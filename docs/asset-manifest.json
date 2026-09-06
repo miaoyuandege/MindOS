@@ -47,7 +47,7 @@
     },
     {
       "path": "chatgpt/custom-instructions/generic.md",
-      "sha256": "62ab565bac79e2b00b0b26c60bc1b5637dd63fbf5fe76a450b3b9956a094c777",
+      "sha256": "b7830f63792d22884d089dabe82a9d5928764ca141fea0070927a47e7c9a680d",
       "origin": "GLOBAL/用户画像/Custom Instructions/Custom Instructions v5 Account.md",
       "transformation": "Thin generic account router; no private path; full protocol remains external; actual save separate.",
       "disposition": "RELEASE"
@@ -75,7 +75,7 @@
     },
     {
       "path": "core/MindOS.md",
-      "sha256": "2ae435235f58ef3cc64191d383e8c34cd682969014cde332e7f3b90ff8ad9710",
+      "sha256": "e02617b0c0c534fad32a041d3e8f8792d7e7b2d4174faa0ce14e23e7e18464c2",
       "origin": "GLOBAL/MindOS.md",
       "transformation": "Curated generic protocol; no private paths, project names, evidence or runtime configuration.",
       "disposition": "RELEASE"
@@ -117,7 +117,7 @@
     },
     {
       "path": "core/templates/task.md",
-      "sha256": "b0ddfb64595d9b26183e99acca0f243b22dd9e0d62ffdbc5c360d0434553cdc9",
+      "sha256": "7a9b932dc812916b963a7eea1ee6d422aebe038c550e0c2a6bb2b87061a454be",
       "origin": "GLOBAL/模板/任务单模板.md",
       "transformation": "Inspected unfilled generic template; UTF-8 LF only, no filled private data.",
       "disposition": "RELEASE"
@@ -140,7 +140,7 @@
       "path": "docs/INVENTORY.md",
       "origin": "NEW_PUBLIC",
       "transformation": "Release-readiness documentation or stdlib-only local diagnostic/synthetic tests; no private data or bundled third-party code.",
-      "sha256": "2388498fecca25af62aff298807316d11ca432bed6f8488f4c56e7fc28449e2f",
+      "sha256": "991cb854e60eb7d0a83f6dd1ac323f9a5cd1149c2946e09cf4bc91edda6a5212",
       "disposition": "RELEASE"
     },
     {
@@ -172,6 +172,13 @@
       "disposition": "RELEASE"
     },
     {
+      "path": "docs/PRINCIPLES.md",
+      "sha256": "33357167bf7651b89bac73d4f0f7a28c7e6df4e42f328624dc7a7b802c433851",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Generic product-understanding principles distilled from the public product contract; not a second protocol Authority.",
+      "disposition": "RELEASE"
+    },
+    {
       "path": "docs/PUBLIC_PRIVATE_BOUNDARY.md",
       "sha256": "bb13a8f970123aaf2b4a952a1025ad97103cb4de09ee865992731bb5f58a9f52",
       "origin": "NEW_PUBLIC",
@@ -194,7 +201,7 @@
     },
     {
       "path": "docs/SOURCE_MAP.md",
-      "sha256": "e87f85b63cf43bf28e57a3123271e2ea56e3c29927087d5bf74a6caa8c40fe58",
+      "sha256": "97fd52bd1ab50f3145db7237e624edeac30167a63a0bc0ee8f25d9ed4b094e15",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -204,6 +211,27 @@
       "sha256": "dca8b1d063af6f2f5272f09a6a4602db8957bc098421a682ae064c1b23d9de6e",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/WALKTHROUGH.md",
+      "sha256": "55ab4eb74970345a07f9ecdefc2af535c9820e4b9e34ea5e1e788b74fbc79d74",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Illustrative generic long-running-project story; no real user, project, task, report or measured evidence.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/WHY_MINDOS.md",
+      "sha256": "336aeea165a7282b2488fb13e35ca7669408e56675e73c962cef61392551c85e",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Fair product-layer comparison using only public concepts; complementary to instructions and memory.",
+      "disposition": "RELEASE"
+    },
+    {
+      "path": "docs/WORKSPACE_ARCHITECTURE.md",
+      "sha256": "14bb99f403f9b7fff47ed955f108b1bfdadf10c9d3360617427cd6caddc55379",
+      "origin": "NEW_PUBLIC",
+      "transformation": "Generic reference layouts and adoption ladder; no private filesystem or bundled infrastructure claim.",
       "disposition": "RELEASE"
     },
     {
@@ -299,7 +327,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b91dd863c1cd90dc054ef407450793f14d32623cd9caf5a4a22c8e37700a13f3",
+      "sha256": "aae081fa533c37f42efab94b06af6a8796707f7c5316be35d3dad55a4ecfb622",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"
@@ -320,7 +348,7 @@
     },
     {
       "path": "tests/test_candidate.py",
-      "sha256": "e8ae044102b42b79ae7e23e6f54129e2304e41b49572fac63c70a66799ac440b",
+      "sha256": "de4d36522d8f68340de8174afbdece46d658e779572f9b991f57c4373ce8aab3",
       "origin": "NEW_PUBLIC",
       "transformation": "New candidate-only documentation, preflight or synthetic test; no private source data copied.",
       "disposition": "RELEASE"

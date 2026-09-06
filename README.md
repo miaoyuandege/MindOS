@@ -44,6 +44,10 @@ With MindOS: “接管这个项目” → AI reads trusted project context → s
 
 This illustrates the workflow, not a measured speed or success guarantee.
 
+## Understand the model
+
+[Why MindOS](docs/WHY_MINDOS.md) · [Workspace architecture](docs/WORKSPACE_ARCHITECTURE.md) · [Walkthrough](docs/WALKTHROUGH.md) · [Principles](docs/PRINCIPLES.md)
+
 ## Start small
 
 For someone who already uses Codex with an existing local project:

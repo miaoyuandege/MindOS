@@ -1,6 +1,6 @@
 # Public pretest file disposition
 
-54 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
+58 exact candidate files; PUBLIC PRE-RELEASE TEST, MIT LICENSED, NOT v0.1 FINAL, EXTERNAL FIRST-USE TESTING. RELEASE below means allowlisted for the explicitly authorized public test, not a final release; licensing is governed by [LICENSE](../LICENSE). No private source, completed real report or account data is included.
 
 | File | Disposition | Purpose |
 | --- | --- | --- |
@@ -32,11 +32,15 @@
 | docs/LAUNCH_COPY.md | RELEASE | Three public-only copy drafts; no external posting |
 | docs/OWNERSHIP.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/PLATFORM.md | RELEASE | Reviewed public source, documentation or verification |
+| docs/PRINCIPLES.md | RELEASE | Product-understanding layer; stable collaboration principles, not protocol Authority |
 | docs/PUBLIC_PRIVATE_BOUNDARY.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/QUICK_START.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/RELEASE_READINESS.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/SOURCE_MAP.md | RELEASE | Reviewed public source, documentation or verification |
 | docs/VERIFY.md | RELEASE | Reviewed public source, documentation or verification |
+| docs/WALKTHROUGH.md | RELEASE | Product-understanding layer; illustrative long-running-project flow |
+| docs/WHY_MINDOS.md | RELEASE | Product-understanding layer; fair comparison with complementary context mechanisms |
+| docs/WORKSPACE_ARCHITECTURE.md | RELEASE | Product-understanding layer; minimal, shared and optional reference layouts |
 | docs/asset-manifest.json | RELEASE | Reviewed public source, documentation or verification |
 | examples/external-first-use-project/任务交接记录/README.md | RELEASE | Unexecuted synthetic example only |
 | examples/external-first-use-project/当前有效/README.md | RELEASE | Unexecuted synthetic example only |

@@ -103,6 +103,44 @@ class CandidateTests(unittest.TestCase):
         self.assertTrue(license_text.startswith('MIT License\n'))
         self.assertEqual(len(list((ROOT/'core/templates').glob('*.md'))),6)
 
+    def test_task_issuance_research_reuse_gate(self):
+        protocol = (ROOT/'core/MindOS.md').read_text(encoding='utf-8')
+        task = (ROOT/'core/templates/task.md').read_text(encoding='utf-8')
+        instructions = (ROOT/'chatgpt/custom-instructions/generic.md').read_text(encoding='utf-8')
+        for text in (protocol, task, instructions):
+            self.assertIn('Research / Reuse Gate', text)
+        self.assertIn('No mature Task is issued while the gate is unresolved', protocol)
+        self.assertIn('not a mechanical web-search requirement', protocol)
+        self.assertIn('NOT NEEDED', task)
+        self.assertIn('EXECUTION FRESHNESS REQUIRED', task)
+        self.assertIn('不重复 broad research', task)
+
+    def test_product_understanding_layer(self):
+        pages = {
+            'Why MindOS': ROOT/'docs/WHY_MINDOS.md',
+            'Workspace architecture': ROOT/'docs/WORKSPACE_ARCHITECTURE.md',
+            'Walkthrough': ROOT/'docs/WALKTHROUGH.md',
+            'Principles': ROOT/'docs/PRINCIPLES.md',
+        }
+        readme = (ROOT/'README.md').read_text(encoding='utf-8')
+        self.assertLess(readme.index('## Understand the model'), readme.index('## Start small'))
+        for label, path in pages.items():
+            self.assertTrue(path.is_file())
+            self.assertIn(f'[{label}](docs/{path.name})', readme)
+        why = pages['Why MindOS'].read_text(encoding='utf-8')
+        for key in ['AGENTS.md', 'Account or custom instructions', 'Model or chat memory', 'MindOS', 'may be unnecessary']:
+            self.assertIn(key, why)
+        architecture = pages['Workspace architecture'].read_text(encoding='utf-8')
+        for key in ['Level 1 — One project / Minimal', 'Level 2 — Multiple long-running projects / Shared workspace', 'Level 3 — Optional integrations / Infrastructure', 'Reference layout ≠ mandatory filesystem layout']:
+            self.assertIn(key, architecture)
+        walkthrough = pages['Walkthrough'].read_text(encoding='utf-8')
+        for key in ['Illustrative walkthrough, not a measured case study', 'Take over this project', 'Technical PASS / human acceptance pending', 'Handoffs']:
+            self.assertIn(key, walkthrough)
+        principles = pages['Principles'].read_text(encoding='utf-8')
+        self.assertEqual(len(re.findall(r'^## \d+\.', principles, re.MULTILINE)), 10)
+        self.assertIn('Agent says done ≠ Task completed', principles)
+        self.assertIn('Technical PASS ≠ human acceptance', principles)
+
     def test_visual_front_door_assets_are_local_and_fixed_size(self):
         expected = {
             'mindos-mark.svg': (128, 128),

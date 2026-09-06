@@ -32,6 +32,26 @@ Verification Mode：`FAST` / `REGRESSION` / `FREEZE` / `AUTO-BY-RISK`
 
 默认使用 `AUTO-BY-RISK`，不要求普通 Task 手动填写复杂验证矩阵。如明确指定 `FREEZE`，必须写清 Candidate identity 与 invalidation boundary。
 
+## Research / Reuse Gate
+
+Research Value：`HIGH` / `MEDIUM` / `LOW` / `NONE`
+
+External Research：`DONE` / `NOT NEEDED` / `EXECUTION FRESHNESS REQUIRED`
+
+Internal resources checked：
+-
+
+Decision：
+- Adopt：
+- Borrow：
+- Thin Adapt：
+- Reject：
+- Defer：
+
+Execution AI：不重复 broad research；只做本 Task 明示的定向 freshness check。
+
+简单 Task 可把本节压缩为 `Research Value = NONE`、`External Research = NOT NEEDED` 与一句理由；不要为形式复制完整搜索记录。
+
 ## Delta
 
 只写本次相对 Baseline 的变化。

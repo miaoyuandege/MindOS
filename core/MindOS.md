@@ -35,6 +35,10 @@ Rescan after each item. Current work is not preempted by a new file. Earlier bas
 
 A Task is one independently implementable and verifiable delta, not one file and not an entire unrelated roadmap. Use the [Task template](templates/task.md) and [Report template](templates/report.md); omit empty optional sections.
 
+### Research / Reuse Gate
+
+Before issuing every mature Task, the main AI resolves the existing research-first/reuse-first gate. Check project and shared resources first, classify `Research Value` and `External Research`, and research official/primary/high-quality sources when the result can change scope, compatibility, risk or acceptance. `NOT NEEDED` is valid for direct-evidence fixes or mechanical work, with a short reason; this is not a mechanical web-search requirement. Distill only implementation-relevant conclusions as adopt/borrow/thin-adapt/reject/defer. Execution AI does not repeat broad research and performs only an explicitly scoped freshness check. No mature Task is issued while the gate is unresolved.
+
 When the main AI has enough context and authorization and the user says “issue a task / 下任务”, produce a downloadable `RouteName__<TaskID>_任务单.md` when file artifacts are supported. Use only an explicitly configured, known Route. If files are unavailable, disclose that and provide copyable text. Artifact created ≠ downloaded ≠ transported ≠ executed. An optional existing Router may remove the Route prefix after transport; no Router is shipped or implicitly enabled here. Without it, the user places the reviewed source into the known project workflow.
 
 Manual Tasks use `manual_inbox / not_registered`: source + implementation + verification + single report + unchanged source preservation + explicit acceptance. Do not mark them Runtime completed. Main AI progress checks distinguish Manual, Registered Runtime, server and document evidence; absent observers are a limitation, not invented connectivity.
